@@ -118,7 +118,7 @@
 				'9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg','16.jpg','17.jpg','18.jpg',
 				'19.jpg','20.jpg','21.jpg','22.jpg','23.jpg','24.jpg','25.jpg','26.jpg','27.jpg','28.jpg'];
 
-            $("#back").fadeTo('slow', 0, function () {
+            $("#back").fadeTo(1000, 0, function () {
 
                 if (currentIndex >= bgImgs.length)
                     currentIndex = 0;
@@ -126,7 +126,7 @@
                 	console.log('background/' + bgImgs[currentIndex])
                 	console.log(currentIndex)
 
-                	$("#back").fadeTo('slow', 0.2)
+                	$("#back").fadeTo(1000, 0.2)
 
                 }
 
@@ -170,6 +170,6 @@
 			$("#code").typewriter();
 		}
 	</script>
-	<embed src="http://sk.sycdn.kuwo.cn/resource/n2/74/54/149742656.mp3" autostart="true" loop="true" hidden="true"></embed>
+	<embed src="https://sk.sycdn.kuwo.cn/resource/n2/74/54/149742656.mp3" autostart="true" loop="true" hidden="true"></embed>
 </body>
 </html>
