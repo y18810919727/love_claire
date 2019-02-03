@@ -161,7 +161,7 @@ function increaseTransperency(imageData,steps){
                 if (b >= c.length) {
                     clearInterval(e)
                 }
-            }, 250)
+            }, 200)
         });
         return this
     }
