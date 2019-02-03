@@ -118,7 +118,7 @@
 				'9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg','16.jpg','17.jpg','18.jpg',
 				'19.jpg','20.jpg','21.jpg','22.jpg','23.jpg','24.jpg','25.jpg','26.jpg','27.jpg','28.jpg'];
 
-            $("#back").fadeTo(1000, 0, function () {
+            $("#back").fadeTo('slow', 0, function () {
 
                 if (currentIndex >= bgImgs.length)
                     currentIndex = 0;
@@ -126,7 +126,7 @@
                 	console.log('background/' + bgImgs[currentIndex])
                 	console.log(currentIndex)
 
-                	$("#back").fadeTo(1000, 0.2)
+                	$("#back").fadeTo('slow', 0.2)
 
                 }
 
@@ -146,7 +146,7 @@
             currentIndex += 1;
         }
 
-        setInterval("changeBg()", 5000); //设定定时切换，单位为毫秒，比如：30分钟=1800秒=1800000毫秒
+        setInterval("changeBg()", 8000); //设定定时切换，单位为毫秒，比如：30分钟=1800秒=1800000毫秒
 		if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
 			msg.id = "errorMsg";
